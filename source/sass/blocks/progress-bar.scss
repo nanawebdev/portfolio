@@ -1,0 +1,80 @@
+.progress-bar {
+  margin: 0;
+  position: relative;
+}
+
+.progress-bar.progress-bar--circle {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 12px;
+}
+
+.progress-bar__svg--circle {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.progress-bar__svg--circle circle {
+  transform: translate(5px, 5px);
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  stroke: #ffc107;
+  fill: none;
+  stroke-width: 5px;
+  stroke-linecap: round;
+}
+
+.progress-bar circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #20202a;
+}
+
+.progress-bar circle:nth-child(2) {
+  stroke-dashoffset: calc(200 - (200 * 50) / 100);
+  stroke: #ffc107;
+}
+
+.progress-bar.progress-bar--circle .progress-bar__percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.languages-list__item:nth-child(1) .progress-bar circle:nth-child(2) {
+  stroke-dashoffset: 0;
+}
+
+.progress-bar.progress-bar--line {
+  height: 50px;
+  width: 100%;
+}
+
+.progress-bar__line {
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.progress-bar__line--top {
+  background-color: #ffc107;
+  z-index: 1;
+  width: 50%;
+}
+
+.progress-bar__line--bottom {
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.coding-list__item:nth-child(1) .progress-bar__line--top {
+  width: 90%;
+}
+
+.progress-bar--line .progress-bar__percent {
+  display: flex;
+  justify-content: space-between;
+}

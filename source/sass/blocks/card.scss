@@ -1,0 +1,41 @@
+.card {
+  height: 100vh;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 290px;
+  }
+}
+
+.card .wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+}
+
+.card__header {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(159deg, rgb(58, 58, 73) 0%, rgba(35, 35, 45, 1) 100%);
+}
+
+.card__avatar {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__name {
+  font-weight: 600;
+  padding: 12px 0;
+}
+
+.card__job {
+  opacity: 0.5;
+}

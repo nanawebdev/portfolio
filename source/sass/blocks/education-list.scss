@@ -1,0 +1,25 @@
+.education-list__item i {
+  color: #ffc107;
+}
+
+.education-list__item span {
+  margin-left: 8px;
+}
+
+.education-list__link {
+  text-decoration: none;
+}
+
+.education-list__link span {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.education-list {
+  margin: 0;
+  padding: 12px 0;
+}
+
+.education-list__item:hover span {
+  opacity: 1;
+}

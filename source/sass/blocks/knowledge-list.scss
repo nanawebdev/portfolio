@@ -1,0 +1,27 @@
+.knowledge-list__item {
+  margin-bottom: 8px;
+}
+
+.knowledge-list__item span {
+  opacity: 0.5;
+}
+
+.knowledge-list__icon::before {
+  // content: "\f00c";
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.knowledge-list__item i {
+  position: relative;
+  margin-right: 10px;
+  color: #ffc107;
+  opacity: 1;
+}
+
+.knowledge-list {
+  padding: 4px 0;
+  margin: 0;
+}

@@ -2,7 +2,7 @@
   position: relative;
   height: 375px;
   width: 100%;
-  background-image: url("./../../img/promo-bg.jpg");
+  background-image: url("./../img/promo-bg.jpg");
   background-size: cover;
   padding: 30px;
   display: grid;
@@ -30,7 +30,7 @@
   flex-direction: column;
   padding: 30px;
   font-size: 30px;
-  background-image: url("./../../img/promo-bg.jpg");
+  background-image: url("./../img/promo-bg.jpg");
   background-size: cover;
   filter: none;
   z-index: 1;

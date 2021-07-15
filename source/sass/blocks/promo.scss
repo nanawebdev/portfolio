@@ -37,3 +37,10 @@
   position: absolute;
   box-sizing: border-box;
 }
+
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding: 30px;
+  }
+}

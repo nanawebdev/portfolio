@@ -1,0 +1,22 @@
+.controls {
+  align-items: center;
+  display: flex;
+  padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.open-card {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+
+.open-card i {
+  color: rgba($basic-white, 0.5);
+  font-weight: 700;
+  font-size: 16px;
+}
+

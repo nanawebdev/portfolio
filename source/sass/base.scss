@@ -36,7 +36,11 @@ body {
   background-color: #191923;
   color: #ffffff;
   margin: 0;
-  display: flex;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .list {

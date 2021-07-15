@@ -1,6 +1,18 @@
 .main {
   width: 100%;
-  padding: 30px;
   height: 100%;
+  overflow-y: scroll;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
+}
+
+.main__card {
+  height: 100%;
+}
+
+.main__promo {
   overflow-y: scroll;
 }

@@ -61,7 +61,6 @@
 .progress-bar__line--top {
   background-color: #ffc107;
   z-index: 1;
-  width: 50%;
 }
 
 .progress-bar__line--bottom {
@@ -72,6 +71,14 @@
 
 .coding-list__item:nth-child(1) .progress-bar__line--top {
   width: 90%;
+}
+
+.coding-list__item:nth-child(2) .progress-bar__line--top {
+  width: 95%;
+}
+
+.coding-list__item:nth-child(3) .progress-bar__line--top {
+  width: 55%;
 }
 
 .progress-bar--line .progress-bar__percent {

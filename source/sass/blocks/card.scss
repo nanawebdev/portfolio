@@ -22,15 +22,18 @@
 .overlay {
   display: none;
   position: absolute;
-  top: 0;
+  top: -60px;
   left: 0;
+  bottom: -60px;
   min-height: 100%;
   width: 100%;
   background-color: rgba($basic-white, 0.5);
   z-index: 9;
+}
 
-  @media (min-width: $tablet-width) {
-    display: none;
+.overlay.showOverlay {
+  @media (max-width: $tablet-width) {
+    display: block;
   }
 }
 

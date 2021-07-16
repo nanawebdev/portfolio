@@ -5,11 +5,13 @@ const overlay = document.querySelector('.overlay');
 
 openCardButton.addEventListener('click', () => {
   card.classList.add('showCard')
-  overlay.style.display = 'block'
+  overlay.classList.add('showOverlay')
+
 
   closeCardButton.addEventListener('click', () => {
     card.classList.remove('showCard')
-    overlay.style.display = 'none'
+    overlay.classList.remove('showOverlay')
+
 
     openCardButton.removeEventListener('click', () => {
       card.classList.add('showCard')

@@ -19,7 +19,7 @@
   transform: translate(5px, 5px);
   stroke-dasharray: 200;
   stroke-dashoffset: 200;
-  stroke: #ffc107;
+  stroke: $basic-yellow;
   fill: none;
   stroke-width: 5px;
   stroke-linecap: round;
@@ -32,7 +32,7 @@
 
 .progress-bar circle:nth-child(2) {
   stroke-dashoffset: calc(200 - (200 * 50) / 100);
-  stroke: #ffc107;
+  stroke: $basic-yellow;
 }
 
 .progress-bar.progress-bar--circle .progress-bar__percent {
@@ -59,7 +59,7 @@
 }
 
 .progress-bar__line--top {
-  background-color: #ffc107;
+  background-color: $basic-yellow;
   z-index: 1;
 }
 

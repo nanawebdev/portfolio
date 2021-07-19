@@ -1,0 +1,24 @@
+.download-cv {
+  padding: 16px 0;
+  width: 100%;
+  background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+}
+
+.download-cv__button {
+  color: rgba($basic-white, 0.5);
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    color: $basic-white;
+  }
+}
+
+.download-cv__button span {
+  margin-right: 8px;
+}
+
+.download-cv__button:hover span {
+  color: $basic-white;
+}

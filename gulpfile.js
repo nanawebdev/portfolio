@@ -79,11 +79,10 @@ exports.default = gulp.series(
 );
 
 const scripts = () => {
-  return gulp.src("source/js/script.js") // возьми файл с js
-    .pipe(terser()) // js минифицированный
-    .pipe(rename("script.min.js")) // переименуй файл в "script.min.js"
-    .pipe(gulp.dest("build/js")) // положи этот файл в "build/js"
-    .pipe(sync.stream()) // обнови страницу, как при нажатии на F5
+  return gulp.src("source/js/**/*.js")
+    .pipe(terser())
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream())
 }
 
 exports.scripts = scripts
@@ -103,7 +102,7 @@ const optimizeImages = () => {
 exports.optimizeImages = optimizeImages
 
 const copyImages = () => {
-  return gulp.src("source/img/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(gulp.dest("build/img"))
 }
 

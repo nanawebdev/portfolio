@@ -195,9 +195,9 @@
       <div class="main__promo promo">
 
         <div class="promo__wrapper">
-          <button class="promo__certificates">МОИ СЕРТИФИКАТЫ</button>
+          <button class="promo__certificates js-open-certificates">МОИ СЕРТИФИКАТЫ</button>
           <div class="promo__title-wrapper">
-            <h1>Серова Анна</h1>
+            <h3>Серова Анна</h3>
             <span>Junior Front-end developer</span>
           </div>
           <a class="vusially-hidden" href="https://ru.freepik.com/photos/background" alt="Background фото создан(а) stockking -
@@ -283,13 +283,32 @@
 
         </ul>
       </div>
-
   </main>
 
   <footer></footer>
 
+  <div class="certificates">
+    <button type="button" class="certificates__close js-close-certificates"><i class="fas fa-times"></i></button>
+
+    <div class="overlay"></div>
+    <ul class="certificates__list">
+      <li class="certificates__item">
+        <img src="./img/certificates/HTMLAcademyAdaptive.jpg" width="400" height="500" class="certificates__img">
+      </li>
+      <li class="certificates__item">
+       <img src="./img/certificates/HTMLAcademyWEBCoding.jpg" width="400" height="500" class="certificates__img">
+     </li>
+     <li class="certificates__item">
+       <img src="./img/certificates/HTMLACademyJavaScript.jpg" width="400" height="500" class="certificates__img">
+     </li>
+     <li class="certificates__item">
+       <img src="./img/certificates/HTMLAcademyFrontEndDev.jpg" width="400" height="500" class="certificates__img">
+     </li>
+    </ul>
+   </div>
+
+  <script src="./js/script.js" type="module"></script>
   <script src="https://kit.fontawesome.com/603fd42ab2.js" crossorigin="anonymous"></script>
-  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

@@ -59,6 +59,11 @@
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 5px 0 #ffffff;
+  }
 }
 
 .card__name {

@@ -21,19 +21,19 @@
 
 .overlay {
   display: none;
-  position: absolute;
-  top: -60px;
-  left: 0;
-  bottom: -60px;
-  min-height: 100%;
-  width: 100%;
-  background-color: rgba($basic-white, 0.5);
-  z-index: 9;
 }
 
 .overlay.showOverlay {
   @media (max-width: $tablet-width) {
     display: block;
+    position: fixed;
+    top: -60px;
+    left: 0;
+    bottom: -60px;
+    min-height: 100%;
+    width: 100%;
+    background-color: rgba(#000000, 0.9);
+    z-index: 9;
   }
 }
 
